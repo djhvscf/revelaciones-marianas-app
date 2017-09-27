@@ -1,11 +1,10 @@
-﻿using System;
+﻿using WorkingWithWebview.Android;
 using Xamarin.Forms;
-using WorkingWithWebview.Android;
 
-[assembly: Dependency (typeof (BaseUrl_Android))]
-namespace WorkingWithWebview.Android 
+[assembly: Dependency(typeof(BaseUrl_Android))]
+namespace WorkingWithWebview.Android
 {
-	public class BaseUrl_Android : IBaseUrl 
+    public class BaseUrl_Android : IBaseUrl 
 	{
 		public string Get () 
 		{

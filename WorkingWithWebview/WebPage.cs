@@ -5,14 +5,28 @@ namespace WorkingWithWebview
 {
 	public class WebPage : ContentPage
 	{
+	    private readonly WebView _browser;
+
 		public WebPage ()
 		{
-			var browser = new WebView();
-
-			browser.Source = "https://testrevmarianas.000webhostapp.com/";
-
-			Content = browser;
+            _browser = new WebView
+            {
+                Source = "https://testrevmarianas.000webhostapp.com/"
+            };
+            
+            Content = _browser;
 		}
-	}
+
+	    protected override bool OnBackButtonPressed()
+	    {
+	        if (_browser.CanGoBack)
+	        {
+	            _browser.GoBack();
+	            return true;
+	        }
+
+	        return base.OnBackButtonPressed();
+	    }
+    }
 }
 
