@@ -10,7 +10,8 @@
     <AssemblyName>WorkingWithWebview</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
-    <NuGetPackageImportStamp></NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -34,9 +35,6 @@
     <Compile Include="App.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebPage.cs" />
-    <Compile Include="LocalHtml.cs" />
-    <Compile Include="LocalHtmlBaseUrl.cs" />
-    <Compile Include="WebAppPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -7,14 +7,7 @@ namespace WorkingWithWebview
 	{
 		public App ()
 		{
-			var tabs = new TabbedPage ();
-
-			//tabs.Children.Add (new LocalHtml {Title = "Local" });
-			//tabs.Children.Add (new LocalHtmlBaseUrl {Title = "BaseUrl" });
-			tabs.Children.Add (new WebPage { Title = "Revelaciones Marianas"});
-			//tabs.Children.Add (new WebAppPage {Title ="External"});
-
-			MainPage = tabs;
+			MainPage = new WebPage();
 		}
 	}
 }
